@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Cloud - Pertemuan 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar (Menu Atas) -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">CloudShowcase</a>
+            <button id="themeToggle">Mode Gelap</button>
+        </div>
+    </nav>
+
+    <!-- Bagian Utama (Hero Section) -->
+    <header>
+        <span class="badge">Status: Live on Local/Cloud</span>
+        <h1>Cloud Application Showcase</h1>
+        <p class="lead">
+            Situs statis ini dikelola secara otomatis menggunakan infrastruktur Cloud dan Version Control Git pada Praktikum Pertemuan 5.
+        </p>
+        <button id="cekServerBtn">Cek Koneksi Server</button>
+        <p id="statusPesan"></p>
+    </header>
+
+    <!-- Bagian 3 Kartu Layanan -->
+    <section class="container">
+        <div class="row">
+            <div class="card">
+                <h5 class="card-title">Web Server</h5>
+                <p class="card-text">Menyajikan halaman statis HTML & CSS dengan waktu respon cepat.</p>
+                <span class="badge">Aktif (99.9%)</span>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Git Version Control</h5>
+                <p class="card-text">Terintegrasi dengan repositori Git untuk deployment otomatis.</p>
+                <span class="badge">Tersinkronisasi</span>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Cloud Security</h5>
+                <p class="card-text">Konfigurasi akses aman dan pemantauan lalu lintas data.</p>
+                <span class="badge">Terlindungi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kuis Ngakak Interaktif -->
+    <section class="container">
+        <div class="card quiz-card">
+            <div class="quiz-header">
+                <div>
+                    <h4 class="card-title mb-1">Kuis Receh Anak IT</h4>
+                    <p class="card-text mb-0">Uji logika santai kamu sebelum pusing lihat error merah.</p>
+                </div>
+                <span id="questionCounter" class="badge">Soal 1 dari 5</span>
+            </div>
+
+            <div id="quizBody">
+                <p id="questionText" class="question-text">Memuat pertanyaan...</p>
+                <div id="optionsContainer" class="options-grid"></div>
+                <p id="feedbackText" class="feedback-text"></p>
+                <button id="nextBtn" class="btn-quiz-next" style="display: none;">Soal Berikutnya</button>
+            </div>
+
+            <!-- Tampilan Skor Akhir -->
+            <div id="resultBody" style="display: none; text-align: center; padding: 15px 0;">
+                <h3 class="card-title">Kuis Receh Selesai!</h3>
+                <p id="finalScoreText" class="lead" style="margin-bottom: 16px;"></p>
+                <button id="restartBtn" class="btn-quiz-next">Main Lagi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Biodata Mahasiswa -->
+    <section class="container pb-5">
+        <div class="card biodata-card">
+            <div class="biodata-header">
+                <div>
+                    <h4 class="card-title mb-1">Biodata Pengembang</h4>
+                    <p class="card-text mb-0">Informasi mahasiswa pelaksana praktikum cloud.</p>
+                </div>
+                <button id="toggleBioBtn" class="btn-bio">Sembunyikan Biodata</button>
+            </div>
+            
+            <div id="biodataDetail" class="biodata-grid">
+                <div class="bio-item">
+                    <span class="bio-label">RYUZIUCHIHA_</span>
+                    <span class="bio-value">Efer Reynatan Saputra</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label">NIM / NPM</span>
+                    <span class="bio-value">1010326001</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label">STATUS SOCIAL / PROGRAM STUDI</span>
+                    <span class="bio-value">Teknik Informatika - JOMBLO SEORANG PRIA KARIR</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label">Mata Kuliah</span>
+                    <span class="bio-value">Komputasi Awan (Cloud Computing)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 my-4 border-top text-center text-body-secondary">
+        <p class="mb-0">&copy; 2026 Praktikum Pengembangan Awan - Pertemuan 5</p>
+    </footer>
+
+    <!-- Script Fitur Interaktif Lengkap -->
+    <script src="script.js"></script>
+         </body>
+         </html>
